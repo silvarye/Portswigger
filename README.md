@@ -1,16 +1,15 @@
-# Résumé
+# Recap
 
-| Lundi | Mardi | Mercredi | Jeudi |   Vendredi     |
+| 1 | 2 | 3 | 4 |   5     |
 |-------|-------|----------|-------|----------------|
 | SQLI  | XSS   |  XSS     | JWT   |XXE + SSRF + OS_CMD_INJECTION|
 
-| Lundi | Mardi | Mercredi | Jeudi |   Vendredi     |
+| 6 | 7 | 8 | 9 |   10     |
 |-------|-------|----------|-------|----------------|
 |  Nothing | CSRF + CORS + Clickjacking  |   SSTI + Information_disclosure    | HTTP_request_smuggling + Access_control   |  Finish all the resting Apprentice labs |
 
-# Semaine 1 :
 
-## Lundi : 
+## 1 : 
 
 
 * SQL injection vulnerability in WHERE clause allowing retrieval of hidden data (APPRENTICE)
@@ -29,7 +28,7 @@
 * Blind SQL injection with time delays and information retrieval (PRACTITIONER)
 * SQL injection with filter bypass via XML encoding (PRACTITIONER)
 
-## Mardi : 
+## 2 : 
 
 * Reflected XSS into HTML context with nothing encoded (APPRENTICE)
 * Stored XSS into HTML context with nothing encoded (APPRENTICE)
@@ -48,7 +47,7 @@
 * Reflected XSS into HTML context with all tags blocked except custom ones (PRACTITIONER)
 * Reflected XSS with some SVG markup allowed (PRACTITIONER)
 
-## Mercredi :
+## 3 :
 
 * Reflected XSS in canonical link tag (PRACTITIONER)
 * Reflected XSS into a JavaScript string with single quote and backslash escaped (PRACTITIONER)
@@ -63,7 +62,7 @@
 * Reflected XSS with event handlers and href attributes blocked (EXPERT)
 * Reflected XSS protected by CSP, with CSP bypass (EXPERT)
 
-## Jeudi :
+## 4 :
 
 * JWT authentication bypass via unverified signature (APPRENTICE)
 * JWT authentication bypass via flawed signature verification (APPRENTICE)
@@ -73,7 +72,7 @@
 * JWT authentication bypass via kid header path traversal (PRACTITIONER)
 * JWT authentication bypass via algorithm confusion with no exposed key (EXPERT)
 
-## Vendredi :
+## 5 :
 
 * Exploiting XXE using external entities to retrieve files (APPRENTICE)
 * Exploiting XXE to perform SSRF attacks (APPRENTICE)
@@ -93,13 +92,11 @@
 
 ---
 
-# Semaine 2 :
-
-## Lundi : 
+## 6 : 
 
 Nothing here
 
-## Mardi : 
+## 7 : 
 
 * CSRF vulnerability with no defenses (APPRENTICE)
 * CSRF where token validation depends on request method (PRACTITIONER)
@@ -112,7 +109,7 @@ Nothing here
 * Basic clickjacking with CSRF token protection (APPRENTICE)
 
 
-## Mercredi :
+## 8 :
 
 * Basic server-side template injection (PRACTITIONER)
 * Basic server-side template injection (code context) (PRACTITIONER)
@@ -127,7 +124,7 @@ Nothing here
 * Authentication bypass via information disclosure (APPRENTICE)
 
 
-## Jeudi :
+## 9 :
 
 * HTTP request smuggling, confirming a CL.TE vulnerability via differential responses (PRACTITIONER)
 * HTTP request smuggling, confirming a TE.CL vulnerability via differential responses (PRACTITIONER)
@@ -140,7 +137,7 @@ Nothing here
 * User ID controlled by request parameter with password disclosure (APPRENTICE)
 * Insecure direct object references (APPRENTICE)
 
-## Vendredi :
+## 10 :
 
 * Basic clickjacking with CSRF token protection (APPRENTICE)
 * Clickjacking with a frame buster script (APPRENTICE)
