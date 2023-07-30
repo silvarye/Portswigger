@@ -4,7 +4,7 @@
 |-------|-------|----------|-------|----------------|
 | SQLI  | XSS   |  XSS     | JWT   |XXE + SSRF + OS_CMD_INJECTION|
 
- | 7 | 8 | 9 |   10     |
+ | 6 | 7 | 8 |   9     |
 |-------|----------|-------|----------------|
 | CSRF + CORS + Clickjacking  |   SSTI + Information_disclosure    | HTTP_request_smuggling + Access_control   |  Finish all the resting Apprentice labs |
 
