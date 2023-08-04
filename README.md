@@ -1,5 +1,5 @@
 # SOLVED : 140
-# RESTING : 107
+# REMAINING : 107
 
 * 🟩 : Apprentice (53/53)
 * 🟧 : Practitioner (76/157)
