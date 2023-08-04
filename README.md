@@ -1,9 +1,9 @@
 # SOLVED : 140
 # RESTING : 107
 
-* 🟩 : Apprentice
-* 🟧 : Practitioner
-* 🟥 : Expert
+* 🟩 : Apprentice (53/53)
+* 🟧 : Practitioner (76/158)
+* 🟥 : Expert (11/36)
 
 # SQL injection
 * 🟩 SQL injection vulnerability in WHERE clause allowing retrieval of hidden data ✅
