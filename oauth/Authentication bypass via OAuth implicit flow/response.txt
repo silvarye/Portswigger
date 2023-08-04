@@ -1,0 +1,6 @@
+HTTP/2 302 Found
+Location: /
+Set-Cookie: session=Nz1OQMdhHPyQb4i9fj1mn8ha5e6zeiwM; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Content-Length: 0
+

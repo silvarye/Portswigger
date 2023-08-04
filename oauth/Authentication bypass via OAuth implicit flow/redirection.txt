@@ -1,0 +1,144 @@
+HTTP/2 200 OK
+Content-Type: text/html; charset=utf-8
+Set-Cookie: session=SKsFDR8gVLfOpbXuaLN9femt0WGyOQWz; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Content-Length: 9954
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsBlog.css rel=stylesheet>
+        <title>Authentication bypass via OAuth implicit flow</title>
+    </head>
+    <body>
+            <script src="/resources/labheader/js/labHeader.js"></script>
+            <div id="academyLabHeader">
+    <section class='academyLabBanner is-solved'>
+        <div class=container>
+            <div class=logo></div>
+                <div class=title-container>
+                    <h2>Authentication bypass via OAuth implicit flow</h2>
+                    <a class=link-back href='https://portswigger.net/web-security/oauth/lab-oauth-authentication-bypass-via-oauth-implicit-flow'>
+                        Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                        <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                            <g>
+                                <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class='widgetcontainer-lab-status is-solved'>
+                    <span>LAB</span>
+                    <p>Solved</p>
+                    <span class=lab-status-icon></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=notification-labsolved class=notification-labsolved>
+        <div class=container>
+            <h4>Congratulations, you solved the lab!</h4>
+            <div>
+                <a class=button href='https://twitter.com/intent/tweet?text=I+completed+the+Web+Security+Academy+lab%3a%0aAuthentication+bypass+via+OAuth+implicit+flow%0a%0a@WebSecAcademy%0a&url=https%3a%2f%2fportswigger.net%2fweb-security%2foauth%2flab-oauth-authentication-bypass-via-oauth-implicit-flow&related=WebSecAcademy,Burp_Suite'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width=20.44 height=17.72 viewBox='0 0 20.44 17.72'>
+                        <title>twitter-button</title>
+                        <path d='M0,15.85c11.51,5.52,18.51-2,18.71-12.24.3-.24,1.73-1.24,1.73-1.24H18.68l1.43-2-2.74,1a4.09,4.09,0,0,0-5-.84c-3.13,1.44-2.13,4.94-2.13,4.94S6.38,6.21,1.76,1c-1.39,1.56,0,5.39.67,5.73C2.18,7,.66,6.4.66,5.9-.07,9.36,3.14,10.54,4,10.72a2.39,2.39,0,0,1-2.18.08c-.09,1.1,2.94,3.33,4.11,3.27A10.18,10.18,0,0,1,0,15.85Z'></path>
+                    </svg>
+                    Share your skills!
+                </a>
+                <a href='https://portswigger.net/web-security/all-labs'>
+                    Continue learning 
+                    <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                        <g>
+                            <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                            <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+        <div theme="blog">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="blog-header">
+                        <img src="/resources/images/blog.svg">
+                    </section>
+                    <section class="blog-list">
+                        <div class="blog-post">
+                        <a href="/post?postId=6"><img src="/image/blog/posts/22.jpg"></a>
+                        <h2>The Hearing Test</h2>
+                        <p>A couple of months ago my flatmate went to have his hearing tested. We all thought he was just ignoring us, but as it turned out he was struggling to keep up with the conversations and decided better to be...</p>
+                        <a class="button is-small" href="/post?postId=6">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=4"><img src="/image/blog/posts/15.jpg"></a>
+                        <h2>Meeting Up</h2>
+                        <p>In the past arranging events, and to meet up with friends and family was easy. The first option for an event was to send out an invitation, in the post, and they would R.S.V.P, sorted. Numbers counted, an event arranged....</p>
+                        <a class="button is-small" href="/post?postId=4">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=1"><img src="/image/blog/posts/41.jpg"></a>
+                        <h2>The Hating Dating App</h2>
+                        <p>I saw a headline the other day about the launch of a dating app that matches people based on the things they hate. I didn't read the article as I wanted to work out for myself how that could possibly...</p>
+                        <a class="button is-small" href="/post?postId=1">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=9"><img src="/image/blog/posts/12.jpg"></a>
+                        <h2>It's All Just A Click Away</h2>
+                        <p>What I love most about Social Media is how it fills my days. Time just evaporates with every word I read, every video I watch and every pointless self-analyzing quiz I take part in. I used to tell people I...</p>
+                        <a class="button is-small" href="/post?postId=9">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=7"><img src="/image/blog/posts/38.jpg"></a>
+                        <h2>Don't Believe Everything You Read</h2>
+                        <p>Don't believe everything you read is not only a common expression, it's also a pretty obvious one. Although, it's common and obvious because it's an old saying, an old saying rooted in print journalism and their individual biases. But now,...</p>
+                        <a class="button is-small" href="/post?postId=7">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=8"><img src="/image/blog/posts/56.jpg"></a>
+                        <h2>Failing The High Five - And More</h2>
+                        <p>I'm one of those awkward people who shouldn't spend so much time talking to strangers/acquaintances. Too friendly and far too jolly, that's me. So, when you go in for the high five, and it fails miserably, you don't half look...</p>
+                        <a class="button is-small" href="/post?postId=8">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=2"><img src="/image/blog/posts/66.jpg"></a>
+                        <h2>Machine Parenting</h2>
+                        <p>It has finally happened. The progression from using TV's and tablets as a babysitter for your kids has evolved. Meet the droids, the 21st Century Machine Parenting bots who look just like mom and dad.</p>
+                        <a class="button is-small" href="/post?postId=2">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=10"><img src="/image/blog/posts/9.jpg"></a>
+                        <h2>I Wanted A Bike</h2>
+                        <p>When it comes the holidays more and more people are finding it hard to make ends meet. They turn to Social Media and ask for advice, how they can make Christmas magical for their little ones when they don't have...</p>
+                        <a class="button is-small" href="/post?postId=10">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=3"><img src="/image/blog/posts/62.jpg"></a>
+                        <h2>No Silly Names, Please</h2>
+                        <p>We hear about it all the time, the unusual names people have given their children. I say unusual to be polite because, to be honest, some of them are just downright ridiculous. Have these parents no idea of the pressure...</p>
+                        <a class="button is-small" href="/post?postId=3">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=5"><img src="/image/blog/posts/54.jpg"></a>
+                        <h2>The First Ever Truly Eco Car Has Made It To Market</h2>
+                        <p>Forget electricity, we know that's still a drain on the National Grid. Some clever little inventors in Ohio have come up with a way of getting your car moving with nothing but air. And better still, air from your own...</p>
+                        <a class="button is-small" href="/post?postId=5">View post</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

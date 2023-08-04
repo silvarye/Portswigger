@@ -1,0 +1,15 @@
+GET /me HTTP/2
+Host: oauth-0a6000db041fd606811e79ad02e0002c.oauth-server.net
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: https://0a96008a04dcd687815a7b9800a6000c.web-security-academy.net/
+Authorization: Bearer QZ3PWbNaVMu9Vi9emo6JM3qgO1qcD6VHqPsWN2Q6n4u
+Content-Type: application/json
+Origin: https://0a96008a04dcd687815a7b9800a6000c.web-security-academy.net
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Te: trailers
+

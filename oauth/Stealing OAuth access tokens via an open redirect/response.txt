@@ -1,0 +1,13 @@
+HTTP/2 200 OK
+X-Powered-By: Express
+Vary: Origin
+Access-Control-Allow-Origin: https://0a96008a04dcd687815a7b9800a6000c.web-security-academy.net
+Access-Control-Expose-Headers: WWW-Authenticate
+Pragma: no-cache
+Cache-Control: no-cache, no-store
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Apr 2023 14:35:08 GMT
+Keep-Alive: timeout=5
+Content-Length: 152
+
+{"sub":"administrator","apikey":"eqbPR9luchQm27TxNjsB49FYjnmXzcG5","name":"Administrator","email":"administrator@normal-user.net","email_verified":true}

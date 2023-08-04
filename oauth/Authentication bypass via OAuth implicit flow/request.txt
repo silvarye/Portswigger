@@ -1,0 +1,17 @@
+POST /authenticate HTTP/2
+Host: 0aea003e03b4297580651c6a007e0089.web-security-academy.net
+Cookie: session=RKBKBR1Yc8Jn1nql1RXcYQEXimdUKd6D
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: application/json
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: https://0aea003e03b4297580651c6a007e0089.web-security-academy.net/oauth-callback
+Content-Type: application/json
+Content-Length: 107
+Origin: https://0aea003e03b4297580651c6a007e0089.web-security-academy.net
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Te: trailers
+
+{"email":"carlos@carlos-montoya.net","username":"carlos","token":"ND_HZwstaM2FJ20bkBO37u2qT1yaC9z4rYKj3Dds3X-"}
