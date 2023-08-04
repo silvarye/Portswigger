@@ -2,8 +2,8 @@
 # RESTING : 107
 
 * 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (76/158)
-* 🟥 : Expert (11/36)
+* 🟧 : Practitioner (76/157)
+* 🟥 : Expert (11/37)
 
 # SQL injection
 * 🟩 SQL injection vulnerability in WHERE clause allowing retrieval of hidden data ✅
