@@ -225,7 +225,7 @@ eyJraWQiOiJhMjVhODg4ZC0wYzNlLTQ0YWUtYWQ3Ny0yM2Y3YjkyYjliMzYiLCJhbGciOiJIUzI1NiJ9
 <a href="/admin/delete?username=wiener">Delete</a>
 ```
 
-GG EZ ! :) #4W17714M <3
+GG EZ ! :) #4W <3
 
 ---
 # Recommandations :
