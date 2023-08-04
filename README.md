@@ -1,6 +1,5 @@
-# SOLVED : 140
-# REMAINING : 107
-
+* ✅ : SOLVED (140)
+* ❌ : REMAINING (107) 
 * 🟩 : Apprentice (53/53)
 * 🟧 : Practitioner (76/157)
 * 🟥 : Expert (11/37)
