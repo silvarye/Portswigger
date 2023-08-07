@@ -1,11 +1,11 @@
-* ✅ : SOLVED (144)
-* ❌ : REMAINING (103)
+* ✅ : SOLVED (145)
+* ❌ : REMAINING (102)
 
 ---
 
 * 🟩 : Apprentice (53/53)
 * 🟧 : Practitioner (80/157)
-* 🟥 : Expert (11/37)
+* 🟥 : Expert (12/37)
 
 # SQL injection
 * 🟩 SQL injection vulnerability in WHERE clause allowing retrieval of hidden data ✅
@@ -272,7 +272,7 @@
 * 🟧 Web shell upload via extension blacklist bypass ✅
 * 🟧 Web shell upload via obfuscated file extension ✅
 * 🟧 Remote code execution via polyglot web shell upload ✅
-* 🟥 Web shell upload via race condition ❌
+* 🟥 Web shell upload via race condition ✅
 
 # JWT
 * 🟩 JWT authentication bypass via unverified signature ✅
