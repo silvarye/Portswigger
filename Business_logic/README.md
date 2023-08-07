@@ -53,3 +53,19 @@ You can log in to your own account using the following credentials: wiener:peter
 3. Alternate between NEWCUST5 / SIGNUP30 up to 0$
 
 ---
+
+```
+Lab: Low-level logic flaw
+
+PRACTITIONER
+
+This lab doesn't adequately validate user input. You can exploit a logic flaw in its purchasing workflow to buy items for an unintended price. To solve the lab, buy a "Lightweight l33t leather jacket".
+
+You can log in to your own account using the following credentials: wiener:peter 
+```
+
+1. Use business_logic.py
+2. Use a calculator to know the qty needed to overflow (max int 2147483647)
+3. Go up to have a price under 100$
+
+---
