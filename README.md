@@ -1,10 +1,10 @@
-* ✅ : SOLVED (145)
-* ❌ : REMAINING (102)
+* ✅ : SOLVED (146)
+* ❌ : REMAINING (101)
 
 ---
 
 * 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (80/157)
+* 🟧 : Practitioner (81/157)
 * 🟥 : Expert (12/37)
 
 # SQL injection
@@ -240,7 +240,7 @@
 * 🟩 High-level logic vulnerability ✅
 * 🟩 Inconsistent security controls ✅
 * 🟩 Flawed enforcement of business rules ✅
-* 🟧 Low-level logic flaw ❌
+* 🟧 Low-level logic flaw ✅
 * 🟧 Inconsistent handling of exceptional input ❌
 * 🟧 Weak isolation on dual-use endpoint ❌
 * 🟧 Insufficient workflow validation ❌
