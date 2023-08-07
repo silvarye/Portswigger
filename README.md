@@ -1,10 +1,10 @@
-* ✅ : SOLVED (147)
-* ❌ : REMAINING (100)
+* ✅ : SOLVED (148)
+* ❌ : REMAINING (99)
 
 ---
 
 * 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (82/157)
+* 🟧 : Practitioner (83/157)
 * 🟥 : Expert (12/37)
 
 # SQL injection
@@ -242,7 +242,7 @@
 * 🟩 Flawed enforcement of business rules ✅
 * 🟧 Low-level logic flaw ✅
 * 🟧 Inconsistent handling of exceptional input ✅
-* 🟧 Weak isolation on dual-use endpoint ❌
+* 🟧 Weak isolation on dual-use endpoint ✅
 * 🟧 Insufficient workflow validation ❌
 * 🟧 Authentication bypass via flawed state machine ❌
 * 🟧 Infinite money logic flaw ❌
