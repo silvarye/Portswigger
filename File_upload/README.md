@@ -44,8 +44,13 @@ You can log in to your own account using the following credentials: wiener:peter
 ```
 
 1. Upload webshell.php
-2. Change content-type to image/jpeg
-3. cat /home/carlos/secret
+2. Look that there are no restriction on the upload file functionnality but the php is not interpreted on the location where the file is uploaded
+3. Change the filename to perform path traversal in order to uplaod the file where the php can be interpreted
+4. filename="..%2Fwebshell.php"
+5. Go to files/webshell.php
+6. enjoy your RCE
+
+
 
 
 ---
