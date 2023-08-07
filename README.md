@@ -1,5 +1,5 @@
-* ✅ : SOLVED (141)
-* ❌ : REMAINING (106)
+* ✅ : SOLVED (142)
+* ❌ : REMAINING (105)
 
 ---
 
@@ -270,7 +270,7 @@
 * 🟩 Web shell upload via Content-Type restriction bypass ✅
 * 🟧 Web shell upload via path traversal ✅
 * 🟧 Web shell upload via extension blacklist bypass ❌
-* 🟧 Web shell upload via obfuscated file extension ❌
+* 🟧 Web shell upload via obfuscated file extension ✅
 * 🟧 Remote code execution via polyglot web shell upload ❌
 * 🟥 Web shell upload via race condition ❌
 
