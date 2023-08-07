@@ -95,7 +95,22 @@ You can log in to your own account using the following credentials: wiener:peter
 1. Upload webshell.php
 2. See that only JPEG and PNG are allowed
 3. Bypass extension verification with : .php%00.png
-4. Enjoy RCE
-5. cat /home/carlos/secret
+
+
+---
+
+```
+Lab: Remote code execution via polyglot web shell upload
+
+PRACTITIONER
+
+This lab contains a vulnerable image upload function. Although it checks the contents of the file to verify that it is a genuine image, it is still possible to upload and execute server-side code.
+
+To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the contents of the file /home/carlos/secret. Submit this secret using the button provided in the lab banner.
+
+You can log in to your own account using the following credentials: wiener:peter 
+```
+
+1. Upload webshell.php
 
 ---
