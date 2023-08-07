@@ -1,10 +1,10 @@
-* ✅ : SOLVED (142)
-* ❌ : REMAINING (105)
+* ✅ : SOLVED (143)
+* ❌ : REMAINING (104)
 
 ---
 
 * 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (77/157)
+* 🟧 : Practitioner (79/157)
 * 🟥 : Expert (11/37)
 
 # SQL injection
@@ -269,7 +269,7 @@
 * 🟩 Remote code execution via web shell upload ✅
 * 🟩 Web shell upload via Content-Type restriction bypass ✅
 * 🟧 Web shell upload via path traversal ✅
-* 🟧 Web shell upload via extension blacklist bypass ❌
+* 🟧 Web shell upload via extension blacklist bypass ✅
 * 🟧 Web shell upload via obfuscated file extension ✅
 * 🟧 Remote code execution via polyglot web shell upload ❌
 * 🟥 Web shell upload via race condition ❌
