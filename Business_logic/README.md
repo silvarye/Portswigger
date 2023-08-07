@@ -69,3 +69,19 @@ You can log in to your own account using the following credentials: wiener:peter
 3. Go up to have a price under 100$
 
 ---
+
+```
+Lab: Inconsistent handling of exceptional input
+
+PRACTITIONER
+
+This lab doesn't adequately validate user input. You can exploit a logic flaw in its account registration process to gain access to administrative functionality. To solve the lab, access the admin panel and delete the user carlos. 
+```
+
+1. Use this mail for register : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab@dontwannacry.com.exploit-0a4900d30424f3a282ca06fe014c0016.exploit-server.net
+2. The server just take 255 first char so he stop after ".com"
+3. Login with you login/password
+4. delete user carlos
+
+---
+
