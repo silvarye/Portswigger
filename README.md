@@ -1,10 +1,10 @@
-* ✅ : SOLVED (140)
-* ❌ : REMAINING (107)
+* ✅ : SOLVED (141)
+* ❌ : REMAINING (106)
 
 ---
 
 * 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (76/157)
+* 🟧 : Practitioner (77/157)
 * 🟥 : Expert (11/37)
 
 # SQL injection
@@ -268,7 +268,7 @@
 # File upload vulnerabilities
 * 🟩 Remote code execution via web shell upload ✅
 * 🟩 Web shell upload via Content-Type restriction bypass ✅
-* 🟧 Web shell upload via path traversal ❌
+* 🟧 Web shell upload via path traversal ✅
 * 🟧 Web shell upload via extension blacklist bypass ❌
 * 🟧 Web shell upload via obfuscated file extension ❌
 * 🟧 Remote code execution via polyglot web shell upload ❌
