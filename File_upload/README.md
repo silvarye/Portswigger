@@ -43,6 +43,9 @@ To solve the lab, upload a basic PHP web shell and use it to exfiltrate the cont
 You can log in to your own account using the following credentials: wiener:peter 
 ```
 
+1. Upload webshell.php
+2. Change content-type to image/jpeg
+3. cat /home/carlos/secret
 
 
 ---
