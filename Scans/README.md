@@ -23,7 +23,7 @@ nmap -F -vvv -Pn -sT --open --reason --max-rate 50 -sV -oA output_file -iL list_
 
 # Fuzzing
 
-* Ffuf
+Ffuf
 ```
 ffuf -r -c -H "User-Agent: Bugbounty" -of html -fs $size -t 4 -sa -p 0.08 -mc all -w $wordlist -c -u https://targeted_website/FUZZ -o ./output_file
 ```
