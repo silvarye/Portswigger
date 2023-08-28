@@ -25,7 +25,7 @@
 3. La victime crée son compte mais le compte existe déjà. Il aura donc la possibilité de réinitialiser son mot de passe.
 4. L'attaquant utilise le lien de changement de mail afin d'acceder au compte de la victime.
 
-## Utilisation non sécurisée de l'idp 
+## Utilisation non sécurisée de l'IdP 
 
 1. L'attaquant utilise un IdP qui ne vérifie pas la propriété d'une adresse électronique lors de la création d'une identité fédérée
 2. L'attaquant crée un compte sur un site vulnérable. 
