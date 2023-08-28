@@ -1,7 +1,7 @@
 ## Attaque par Fusion Classique-Fédérée
 
 1. L'attaquant crée un compte sur un site vulnérable avec son adresse mail.
-2. L'attaquant change l'adresse mail lié à son compte pour celle de la victime.
+2. L'attaquant change l'adresse mail liée à son compte pour celle de la victime.
 3. La victime se connecte avec une identité féderée.
 4. L'attaquant peut alors accèder au compte de la victime.
 
