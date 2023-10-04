@@ -1,9 +1,9 @@
-* ✅ : SOLVED (149)
-* ❌ : REMAINING (105)
+* ✅ : SOLVED (151)
+* ❌ : REMAINING (103)
 
 ---
 
-* 🟩 : Apprentice (54/56)
+* 🟩 : Apprentice (56/56)
 * 🟧 : Practitioner (83/162)
 * 🟥 : Expert (12/36)
 
@@ -307,7 +307,7 @@
 * 🟧 Performing CSRF exploits over GraphQL ❌
 
 # Race conditions
-* 🟩 Limit overrun race conditions ❌
+* 🟩 Limit overrun race conditions ✅
 * 🟧 Bypassing rate limits via race conditions ❌
 * 🟧 Multi-endpoint race conditions ❌
 * 🟧 Single-endpoint race conditions ❌
@@ -316,7 +316,7 @@
 
 # NoSQL injection
 * 🟩 Detecting NoSQL injection ✅
-* 🟩 Exploiting NoSQL operator injection to bypass authentication ❌
+* 🟩 Exploiting NoSQL operator injection to bypass authentication ✅
 * 🟧 Exploiting NoSQL injection to extract data ❌
 * 🟧 Exploiting NoSQL operator injection to extract unknown fields ❌
 
