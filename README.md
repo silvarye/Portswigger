@@ -307,8 +307,8 @@
 * 🟧 Performing CSRF exploits over GraphQL ❌
 
 # NoSQL injection
-🟩 Detecting NoSQL injection ✅
-🟩 Exploiting NoSQL operator injection to bypass authentication ❌
-🟧 Exploiting NoSQL injection to extract data ❌
-🟧 Exploiting NoSQL operator injection to extract unknown fields ❌
+* 🟩 Detecting NoSQL injection ✅
+* 🟩 Exploiting NoSQL operator injection to bypass authentication ❌
+* 🟧 Exploiting NoSQL injection to extract data ❌
+* 🟧 Exploiting NoSQL operator injection to extract unknown fields ❌
 
