@@ -306,6 +306,14 @@
 * 🟧 Bypassing GraphQL brute force protections ❌
 * 🟧 Performing CSRF exploits over GraphQL ❌
 
+# Race conditions
+* 🟩 Limit overrun race conditions ❌
+* 🟧 Bypassing rate limits via race conditions ❌
+* 🟧 Multi-endpoint race conditions ❌
+* 🟧 Single-endpoint race conditions ❌
+* 🟧 Exploiting time-sensitive vulnerabilities ❌
+* 🟥 Partial construction race conditions ❌
+
 # NoSQL injection
 * 🟩 Detecting NoSQL injection ✅
 * 🟩 Exploiting NoSQL operator injection to bypass authentication ❌
