@@ -1,11 +1,11 @@
-* ✅ : SOLVED (148)
-* ❌ : REMAINING (99)
+* ✅ : SOLVED (149)
+* ❌ : REMAINING (105)
 
 ---
 
-* 🟩 : Apprentice (53/53)
-* 🟧 : Practitioner (83/157)
-* 🟥 : Expert (12/37)
+* 🟩 : Apprentice (54/56)
+* 🟧 : Practitioner (83/162)
+* 🟥 : Expert (12/36)
 
 # SQL injection
 * 🟩 SQL injection vulnerability in WHERE clause allowing retrieval of hidden data ✅
@@ -305,3 +305,10 @@
 * 🟧 Finding a hidden GraphQL endpoint ❌
 * 🟧 Bypassing GraphQL brute force protections ❌
 * 🟧 Performing CSRF exploits over GraphQL ❌
+
+# NoSQL injection
+🟩 Detecting NoSQL injection ✅
+🟩 Exploiting NoSQL operator injection to bypass authentication ❌
+🟧 Exploiting NoSQL injection to extract data ❌
+🟧 Exploiting NoSQL operator injection to extract unknown fields ❌
+
